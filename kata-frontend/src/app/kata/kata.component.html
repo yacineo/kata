@@ -1,6 +1,6 @@
 <div class="container mt-5">
     <div class="container mt-5">
-        <h2>Tester l'API avec Modal</h2>
+        <h2>Tester l'API FOOBARQUIX</h2>
         <button type="submit" class="btn btn-primary"  (click)="openModal()">Tester</button>
     </div>
 
@@ -8,12 +8,12 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">Kata</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form [formGroup]="kataForm" (ngSubmit)="onSubmit()">
                     <div class="mb-3">
-                        <label for="number" class="form-label">Enter a number between 0 and 100:</label>
+                        <label for="number" class="form-label">Entrez un numéro compris entre 0 et 100:</label>
                         <input type="number" id="number" formControlName="number" class="form-control" />
                         <div *ngIf="kataForm.get('number')?.invalid && kataForm.get('number')?.touched" class="text-danger">
                             Veuillez saisir un nombre valide.
