@@ -1,0 +1,36 @@
+package com.kata.backend;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+@Service
+public class KataService implements IkataService {
+
+    private static final Logger logger = LoggerFactory.getLogger(KataService.class);
+
+    @Override
+    public String transformNumber(int number) {
+        StringBuilder result = new StringBuilder();
+
+        result.append(checkDivisibilityBy3(number));
+        result.append(checkDivisibilityBy5(number));
+        result.append(checkForDigit(number, '3', "FOO"));
+        result.append(checkForDigit(number, '5', "BAR"));
+        result.append(checkForDigit(number, '7', "QUIX"));
+
+        return result.length() > 0 ? result.toString() : String.valueOf(number);
+    }
+
+    private String checkDivisibilityBy3(int number) {
+        return number % 3 == 0 ? "FOO" : "";
+    }
+
+    private String checkDivisibilityBy5(int number) {
+        return number % 5 == 0 ? "BAR" : "";
+    }
+
+    private String checkForDigit(int number, char digit, String result) {
+        return String.valueOf(number).contains(String.valueOf(digit)) ? result : "";
+    }
+}

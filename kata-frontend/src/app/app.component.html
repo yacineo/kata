@@ -1,0 +1,78 @@
+<div class="container mt-5">
+  <h1>Kata FOO BAR QUIX</h1>
+  <p>
+    Ecrire un algorithme qui transforme une nombre (compris entre 0 et 100)
+    en une chaîne de characters. Cet algorithme doit suivre les règles
+    suivantes :
+  </p>
+  <ul>
+    <li>
+      Si le nombre est divisible par 3 ou s'il contient 3, la chaîne de
+      characters doit contenir "FOO"
+    </li>
+    <li>
+      Si le nombre est divisible par 5 ou s'il contient 5, la chaîne de
+      characters doit contenir "BAR"
+    </li>
+    <li>
+      Si le nombre contient 7, la chaîne de characters doit contenir "QUIX"
+    </li>
+    <li>
+      La règle "divisible par" est plus prioritaire que la règle "contient"
+    </li>
+    <li>Le contenu est analysé de gauche à droite</li>
+    <li>
+      Si aucune des règles n'est vérifiée, retourner la nombre en entrée
+      sous forme de chaîne de characters
+    </li>
+  </ul>
+  <p>Exemples :</p>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Input</th>
+      <th>Output</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>"1"</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>"FOOFOO"</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>"BARBAR"</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>"QUIX"</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>"FOO"</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>"FOOBAR"</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>"BARFOO"</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>"FOOFOOFOO"</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>"FOOBARBAR"</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <app-kata></app-kata>
+</div>
