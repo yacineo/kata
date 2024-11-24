@@ -1,83 +1,106 @@
 <div class="container mt-5">
+  <!-- Interactive Component Section -->
+  <section class="text-center">
+    <h2 class="mb-4">Tester le Kata</h2>
+    <app-kata></app-kata>
+  </section>
 
-  <app-kata></app-kata>
+  <!-- Line Before Heading -->
+  <hr class="my-5" />
 
-  <div>
-    <h1>Kata FOO BAR QUIX</h1>
+  <!-- Explanatory Content Section -->
+  <section class="mt-5">
+    <h1 class="text-center mb-4">Kata FOO BAR QUIX</h1>
     <p>
-      Ecrire un algorithme qui transforme une nombre (compris entre 0 et 100)
-      en une chaîne de characters. Cet algorithme doit suivre les règles
+      Écrire un algorithme qui transforme un nombre (compris entre 0 et 100)
+      en une chaîne de caractères. Cet algorithme doit suivre les règles
       suivantes :
     </p>
-    <ul>
-      <li>
-        Si le nombre est divisible par 3 ou s'il contient 3, la chaîne de
-        characters doit contenir "FOO"
-      </li>
-      <li>
-        Si le nombre est divisible par 5 ou s'il contient 5, la chaîne de
-        characters doit contenir "BAR"
-      </li>
-      <li>
-        Si le nombre contient 7, la chaîne de characters doit contenir "QUIX"
-      </li>
-      <li>
-        La règle "divisible par" est plus prioritaire que la règle "contient"
-      </li>
-      <li>Le contenu est analysé de gauche à droite</li>
-      <li>
-        Si aucune des règles n'est vérifiée, retourner la nombre en entrée
-        sous forme de chaîne de characters
-      </li>
-    </ul>
-    <p>Exemples :</p>
-    <table class="table">
-      <thead>
+    <table class="table table-bordered">
+      <thead class="table-light">
       <tr>
-        <th>Input</th>
-        <th>Output</th>
+        <th scope="col" colspan="2">Règles</th>
       </tr>
       </thead>
       <tbody>
       <tr>
         <td>1</td>
-        <td>"1"</td>
+        <td>Si le nombre est divisible par 3 ou s'il contient 3, la chaîne de caractères doit contenir <strong>"FOO"</strong>.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Si le nombre est divisible par 5 ou s'il contient 5, la chaîne de caractères doit contenir <strong>"BAR"</strong>.</td>
       </tr>
       <tr>
         <td>3</td>
-        <td>"FOOFOO"</td>
+        <td>Si le nombre contient 7, la chaîne de caractères doit contenir <strong>"QUIX"</strong>.</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>La règle <strong>"divisible par"</strong> est prioritaire par rapport à la règle <strong>"contient"</strong>.</td>
       </tr>
       <tr>
         <td>5</td>
-        <td>"BARBAR"</td>
+        <td>Le contenu est analysé de gauche à droite.</td>
       </tr>
       <tr>
-        <td>7</td>
-        <td>"QUIX"</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>"FOO"</td>
-      </tr>
-      <tr>
-        <td>51</td>
-        <td>"FOOBAR"</td>
-      </tr>
-      <tr>
-        <td>53</td>
-        <td>"BARFOO"</td>
-      </tr>
-      <tr>
-        <td>33</td>
-        <td>"FOOFOOFOO"</td>
-      </tr>
-      <tr>
-        <td>15</td>
-        <td>"FOOBARBAR"</td>
+        <td>6</td>
+        <td>Si aucune des règles n'est vérifiée, retourner le nombre en entrée sous forme de chaîne de caractères.</td>
       </tr>
       </tbody>
     </table>
 
-
-  </div>
+    <!-- Examples Section -->
+    <div class="mt-4">
+      <h3 class="fw-bold">Exemples :</h3>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+          <thead class="table-light">
+          <tr>
+            <th scope="col">Input</th>
+            <th scope="col">Output</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>1</td>
+            <td>"1"</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>"FOOFOO"</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>"BARBAR"</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>"QUIX"</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>"FOO"</td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td>"FOOBAR"</td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td>"BARFOO"</td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td>"FOOFOOFOO"</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>"FOOBARBAR"</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 </div>

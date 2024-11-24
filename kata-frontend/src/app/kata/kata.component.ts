@@ -45,4 +45,10 @@ export class KataComponent {
         const modal = bootstrap.Modal.getOrCreateInstance(this.myModal.nativeElement);
         modal.show();
     }
+
+  onModalClose(): void {
+    // Reset the form when the modal is closed
+    this.kataForm.reset();
+    this.result = undefined; // Clear any previous result
+  }
 }
