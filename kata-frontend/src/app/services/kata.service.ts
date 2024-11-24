@@ -7,7 +7,7 @@ import {Observable} from 'rxjs';
 })
 export class KataService {
 
-  private apiUrl = 'http://localhost:8080/transform'; // Backend API URL
+  private apiUrl = 'http://localhost:8080/api/kata/transform'; // Backend API URL
 
   constructor(private http: HttpClient) {}
 
