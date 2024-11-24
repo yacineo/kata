@@ -1,14 +1,14 @@
 package com.kata.backend.service.impl;
 
 import com.kata.backend.exception.CustomIllegalArgumentException;
-import com.kata.backend.service.IkataService;
+import com.kata.backend.service.IKataService;
 import org.springframework.stereotype.Service;
 
 import static com.kata.backend.utils.NumberUtils.isDivisibleBy;
 
 
 @Service
-public class KataService implements IkataService {
+public class KataService implements IKataService {
 
     public static final String FOO = "FOO";
     public static final String BAR = "BAR";
@@ -26,7 +26,7 @@ public class KataService implements IkataService {
      * @param number the number to transform
      * @return the transformed string
      */
-    public String transformNumber(int number) {
+    public String transformNumber(int number) throws CustomIllegalArgumentException{
         if (number < 0 || number > 100) {
             throw new CustomIllegalArgumentException("Number must be between 0 and 100");
         }

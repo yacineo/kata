@@ -1,7 +1,7 @@
 package com.kata.backend;
 
 import com.kata.backend.controller.KataController;
-import com.kata.backend.service.IkataService;
+import com.kata.backend.service.IKataService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -20,7 +20,7 @@ public class KataControllerTest {
     private MockMvc mockMvc;  // MockMvc to simulate HTTP requests
 
     @MockBean
-    private IkataService kataService;  // Mock the IkataService
+    private IKataService kataService;  // Mock the IkataService
 
     @Test
     public void testTransform() throws Exception {

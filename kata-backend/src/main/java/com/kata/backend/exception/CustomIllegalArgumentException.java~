@@ -1,4 +1,0 @@
-package com.kata.backend.exception;
-
-public class CustomIllegalArgumentException extends Throwable {
-}

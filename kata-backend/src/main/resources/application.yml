@@ -1,3 +1,17 @@
 spring:
   application:
     name: backend
+  # Spring Boot profiles (useful for different environments)
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+
+# Configuration for Actuator (optional but recommended for monitoring)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics  # Include only necessary endpoints
+
